@@ -1,0 +1,42 @@
+body {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "pablo";
+}
+
+header {
+    background-color: white;
+}
+
+section section {
+    background-color: white;
+}
+
+form {
+    background-color: white;
+}
+
+#datos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+}
+
+#datos span {
+    border: 1px solid black;
+}
+
+#adicional p{
+    width: 50%;
+    float: left;
+}
+
+#preferencias {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#preferencias label {
+    width: 50%;
+}

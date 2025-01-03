@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMEN LM 2025 TRIMESTRE 1</title>
+	<link rel="stylesheet" href="css/comun.css" >
+	<link rel="stylesheet" href="css/listas.css">
+    <style>
+	/* 
+	   EL CSS NO SE PUEDE PONER AQUÍ
+	   DEBES USAR EL FICHERO EXTERNO 
+	   FACILITADO EN LA CARPETA CSS
+	   LISTAS.CSS o COMUN.CSS
+	*/		
+    </style>
+</head>
+<body>
+	<section id="contenedor">
+		<header>
+			<img src="imagenes/html5_css3.png" alt="header_img" >
+			<h1>COSAS APRENDIDAS EN LENGUAJE DE MARCAS (Soy h1)</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">LISTAS<sup>1</sup></a></li>
+					<li><a href="">FORMULARIO<sup>1</sup></a></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="ol">
+			<section>
+				<h2>Lista Ordenada (Soy h2)</h2>
+			</section>
+			<ol>
+				<li>
+					<h3>FONT-SIZE (Soy h3 y Mi sublista tiene 8px usando EM)</h3>
+					<ol id="fs">
+						<li>Tengo 32 px usando % y color rojo</li>
+						<li>Tengo 32 px usando EM y color verde</li>
+						<li>Tengo 32 px usando REM y color azul</li>
+					</ol>
+				</li>
+				<li>
+					<h3>FIGURES (Soy h3)</h3>
+					<ol>
+						<li><figure></figure><figcaption>Imagen de nuestro centro</figcaption></li>
+						<li><figure></figure></li>
+						<li>Si buscas resultados distintos<br>no hagas siempre lo mismo. <br><br>Albert Einstein</li>
+					</ol>
+				</li>
+				<li>
+					<h3>TABLAS (Soy h3. list-style-image y background-image)</h3>
+					<ol id="img">
+						<li id="listStyle">
+							<caption>TABLA con THEAD/TBODY <br>rowspan/colspan</caption>
+						   	<table>
+								<thead>
+									<tr>
+										<td>CABECERA 1<sup>2</sup></td>
+										<td rowspan="2" colspan="2">DETALLE<sup>2</sup></td>
+									</tr>
+									<tr>
+										<td>CABECERA 2<sup>2</sup></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Grupo 1</td>
+										<td>Dato A</td>
+										<td>Dato B</td>
+									</tr>
+									<tr>
+										<td>Grupo 2</td>
+										<td colspan="2">Descripción general</td>
+									</tr>
+								</tbody>
+							</table>				
+						</li>
+						<li id="background">
+							<caption>TABLAS dentro de TABLAS</caption>
+							<table>
+								<tr>
+									<td>
+										<table>
+											<thead>
+												<tr>
+													<td colspan="2">SUBTABLA 1<sup>2</sup></td>
+												</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>Dato 1.1</td>
+												<td>Dato 2.1</td>
+											</tr>
+											<tr>
+												<td>Dato 3.1</td>
+												<td>Dato 4.1</td>
+											</tr>
+											</tbody>
+										</table>
+									</td>
+									<td>
+										<table>
+											<thead>
+												<tr>
+													<td colspan="2">SUBTABLA 2<sup>2</sup></td>
+												</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>Dato 1.2</td>
+												<td>Dato 2.2</td>
+											</tr>
+											<tr>
+												<td>Dato 3.2</td>
+												<td>Dato 4.2</td>
+											</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</table>				
+						</li>			
+					</ol>
+				</li>
+				<li id="anclas">
+					<ol>
+						<li><a href="#desordenada">Ancla a Lista desordenada</a></li>
+						<li><a href="#instrucciones">Ancla a Párrafo de instrucciones</a></li>
+						<li><a href="html/formulario.html">Ancla a Formulario</a></li>
+					</ol>
+				</li>
+			</ol>
+		</section>
+		<section>
+			<section>
+				<h2 id="desordenada">Lista Desordenada (Soy h2)</h2>
+			</section>
+			<ul>
+				<li>Primer nivel</li>
+				<li>Primer nivel
+					<ul>
+						<li>Segundo nivel</li>
+						<li>Segundo nivel
+							<ul>
+								<li>Tercer nivel</li>
+								<li>Tercer nivel</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Primer nivel</li>
+			</ul>	
+		</section>
+		<section>
+			<section>
+				<h2>Lista Definición (Soy h2)</h2>
+			</section>	
+			<dl>
+				<dt>Concepto 1</dt>
+				<dd>Definición del Concepto 1</dd>
+				<dt>Concepto 2</dt>
+				<dd>Definición del concepto 2
+					<dl>
+						<dt>Subconcepto A</dt>
+						<dd>Definición del subconcepto A</dd>
+						<dt>Subconcepto B</dt>
+						<dd>Definición del subconcepto B</dd>
+					</dl>
+				</dd>
+			</dl> 	
+		</section>
+		<footer>
+			<h2 id="instrucciones">Instrucciones (Soy h2)</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur<br> 
+				adipiscing elit, habitasse vestibulum<br> 
+				urna eros vitae integer, felis lacus<br> 
+				litora posuere senectus velit. Nunc<br> 
+				velit dictumst vestibulum dignissim,<br> 
+				egestas fringilla sodales scelerisque<br> 
+				condimentum, sollicitudin vel bibendum.<br> 
+				Sociosqu sed elementum volutpat<br> 
+				parturient a accumsan, urna orci<br> 
+				etiam est iaculis ut lectus, nec<br> 
+				leo non sodales porttitor.
+			</p> 
+			<p>
+				Volutpat dis integer odio condimentum<br> 
+				sodales diam justo nullam eros, suscipit<br> 
+				nec quis nam imperdiet libero commodo<br> 
+				aliquet semper orci, fringilla aenean<br> 
+				facilisi blandit mattis faucibus praesent<br> 
+				taciti. Nisi curae laoreet sem fusce<br> 
+				facilisis purus magnis, euismod sed<br> 
+				cubilia habitant senectus magna, egestas<br> 
+				nullam praesent pharetra vehicula lacinia<br> 
+				eu, mi consequat malesuada habitasse<br> 
+				sociosqu. Nunc cum ultrices quisque<br> 
+				class conubia est ligula dictumst,<br> 
+				proin magnis himenaeos viverra hac<br> 
+				enim magna per, luctus accumsan sapien<br> 
+				eget sagittis litora platea.
+			</p>
+		</footer>
+	</section>	
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+ 
+#contenedor {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+h2 {
+	color: blue;
+	text-shadow: 5px 5px 3px green;
+	text-decoration: overline underline wavy blue;
+}
+	
+section ul {
+	border: 3px dashed blue;
+}
+
+section ul ul {
+	border: none;
+}
+
+section dl{
+	border: 3px dashed red;
+}
+
+nav ul {
+	border: none;
+}
+
+dt {
+	font-weight: bold;
+}
+	
+#ol {
+	display: grid;
+}
+
+ol {
+	border: 3px dotted red;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+ol li {
+	list-style-type: upper-roman;
+}
+
+ol ol li {
+	list-style-type: lower-alpha;
+}
+
+ol ol li caption {
+	text-align: center;
+}
+
+#listStyle {
+	list-style-image: url(../imagenes/css3.png);
+}
+
+#background {
+	background-image: url(../imagenes/css3.png);
+	background-repeat: no-repeat;
+	list-style-type: none;
+}
+
+table {
+	border: 1px solid black;
+}
+
+thead td {
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+}
+
+td {
+	border: 1px solid black;
+}
+
+#anclas a:hover {
+	font-size: 200%;
+	color: red;
+	text-decoration: underline dotted blue;
+}
+
+	footer p{
+		text-align:justify;
+		border:3px solid green;
+	}

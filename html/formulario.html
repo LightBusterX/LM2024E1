@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMEN LM 2025 TRIMESTRE 1</title>
+	<link rel="stylesheet" href="../css/comun.css">
+	<link rel="stylesheet" href="../css/formulario.css">
+    <style>
+	/* 
+	   EL CSS NO SE PUEDE PONER AQUÍ
+	   DEBES USAR EL FICHERO EXTERNO 
+	   FACILITADO EN LA CARPETA CSS
+	   FORMULARIO.CSS o COMUN.CSS
+	*/	
+    </style>
+</head>
+<body>
+
+	<header>
+		<img src="../imagenes/html5_css3.png" alt="header_img" >
+		<h1>COSAS APRENDIDAS EN LENGUAJE DE MARCAS (Soy h1)</h1>
+		<nav>
+			<ul>
+				<li><a href="">LISTAS<sup>1</sup></a></li>
+				<li><a href="formulario.html">FORMULARIO<sup>1</sup></a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<section>
+			<h1 id="formulario">Formulario (Soy h1)</h1>
+		</section>
+		<form method="get" action="../index.html#ol"   ><!-- AÑADE ATRIBUTOS AL FORM -->
+			
+			<!-- Datos Personales -->
+			<fieldset id="datos">
+				<legend>Datos personales</legend>
+				<span>
+					<label for="nombre">Nombre:</label>
+					<input type="text" name="nombre" required id="nombre" placeholder="Introduce tu nombre">
+				</span>
+				<span>
+					<label for="apellidos">Apellidos:</label>
+					<input for="text" name="apellidos" required id="apellidos" placeholder="Introduce tu apellido">
+				</span>
+				<span>
+					<label for="email">Email:</label>
+					<input type="text" name="email" id="email" maxlength="20" placeholder="Introduce tu correo">
+				</span>
+				<span>
+					<label for="descripcion">Descripción:</label>
+					<textarea id="descripcion"></textarea>
+				</span>
+				<span>
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password">
+				</span>
+				<span>
+					<label for="password2">Repetir Password:</label>
+					<input type="password" id="password2" name="password2">
+				</span>
+				<span>
+					<label for="direccion">Dirección:</label>
+				<input type="text" id="direccion" name="direccion" maxlength="100">
+				</span>
+			</fieldset>
+
+			<!-- Preferencias -->
+			<fieldset id="preferencias">
+				<legend>Preferencias</legend>
+				<label>
+					<input type="radio" id="contac_correo" name="contacto">Contactar por correo
+				</label>
+				<label>
+					<input type="radio" id="contac_telefono" name="contacto">Contacto por teléfono
+				</label>
+				<label>
+					<input type="checkbox" checked name="tecnologia">Tecnología
+				</label>
+				<label>
+					<input type="checkbox" name="arte">Arte
+				</label>
+				<label>
+					<input type="checkbox" name="ciencia">Ciencia
+				</label>
+				<label>
+					<input type="checkbox" name="musica">Música
+				</label>
+			</fieldset>
+
+			<!-- Información adicional -->
+			<fieldset id="adicional">
+				<legend>Información adicional</legend>
+				<p>
+					<label for="pais">País: </label>
+					<select id="pais" name="pais">
+						<option value="null"></option>
+						<option value="es">España</option>
+						<option value="fr">Francia</option>
+						<option value="ar">Argentina</option>
+						<option value="it">Italia</option>
+					</select>
+				</p>
+				<p>
+					<label for="comentarios">Comentarios:</label><br>
+					<textarea name="comments" id="comentarios" placeholder="Escribe aquí tus comentarios..."></textarea>
+				</p>
+			</fieldset>
+
+			<!-- Términos y envío -->
+			<fieldset>
+				<legend>Confirmación</legend>
+				<table>
+					<tr>
+						<td>
+							<input type="checkbox" required> Acepto los términos y condiciones
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="submit" value="Enviar">
+						</td>
+						<td>
+							<input type="reset" value="Borrar">
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</section>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
