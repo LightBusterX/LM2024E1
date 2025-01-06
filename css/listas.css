@@ -7,7 +7,8 @@ body {
 #contenedor {
 	background-color: white;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 header img {
@@ -17,11 +18,17 @@ header img {
 
 h2 {
 	color: blue;
+	text-align: center;
 	text-shadow: 5px 5px 3px green;
 	text-decoration: overline underline wavy blue;
 }
 	
-section ul:not(nav ul) {
+#contenedor>section:not(#ol)
+{
+	flex: 50%;
+}
+
+section>ul:not(nav ul) {
 	border: 3px dashed blue;
 }
 
@@ -117,7 +124,12 @@ td {
 	text-decoration: underline dotted blue;
 }
 
-	footer p{
-		text-align:justify;
-		border:3px solid green;
-	}
+footer  {
+	width: 100%;
+}
+
+footer p{
+	width: 100%;
+	text-align:justify;
+	border:3px solid green;
+}
