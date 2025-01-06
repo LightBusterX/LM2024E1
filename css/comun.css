@@ -21,7 +21,8 @@ nav {
 
 nav ul {
     display: flex;
-    width: 35%;
+    width: 30%;
+    border: none;
 }
 
 nav ul li {

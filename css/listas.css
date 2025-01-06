@@ -10,13 +10,18 @@ body {
 	flex-direction: column;
 }
 
+header img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 h2 {
 	color: blue;
 	text-shadow: 5px 5px 3px green;
 	text-decoration: overline underline wavy blue;
 }
 	
-section ul {
+section ul:not(nav ul) {
 	border: 3px dashed blue;
 }
 
@@ -28,22 +33,20 @@ section dl{
 	border: 3px dashed red;
 }
 
-nav ul {
-	border: none;
-}
-
 dt {
 	font-weight: bold;
 }
 	
-#ol {
-	display: grid;
-}
 
-ol {
-	border: 3px dotted red;
+
+#ol>ol {
+	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
+}
+
+#ol ol {
+	border: 3px dotted red;
 }
 
 ol li {
@@ -56,6 +59,25 @@ ol ol li {
 
 ol ol li caption {
 	text-align: center;
+}
+
+#fs {
+	font-size: 0.5em;
+}
+
+#fs li {
+	color: green;
+	font-size: 4em;
+}
+
+#fs li:first-child {
+	color: red;
+	font-size: 400%;
+}
+
+#fs li:last-child {
+	color: blue;
+	font-size: 2rem;
 }
 
 #listStyle {
@@ -80,6 +102,13 @@ thead td {
 
 td {
 	border: 1px solid black;
+}
+
+#anclas {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end:2;
 }
 
 #anclas a:hover {
